@@ -1,0 +1,411 @@
+{
+	"info": {
+		"_postman_id": "aed9d5c1-80eb-4cd3-9478-3d88722dd396",
+		"name": "Examen TI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1994816"
+	},
+	"item": [
+		{
+			"name": "Crud",
+			"item": [
+				{
+					"name": "Get Productos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/productos/",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"productos",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Producto",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nombre",
+									"value": "Samsung",
+									"type": "text"
+								},
+								{
+									"key": "descripcion",
+									"value": "Celular muy bueno y bonito",
+									"type": "text"
+								},
+								{
+									"key": "precio",
+									"value": "4000",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/productos/crear",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"productos",
+								"crear"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Producto",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nombre",
+									"value": "Huawei Y9 Pro",
+									"type": "text"
+								},
+								{
+									"key": "descripcion",
+									"value": "Celular muy bueno, es la gama mas alta",
+									"type": "text"
+								},
+								{
+									"key": "precio",
+									"value": "14000",
+									"type": "text"
+								},
+								{
+									"key": "id_producto",
+									"value": "5",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/productos/update/",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"productos",
+								"update",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Producto",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id_producto",
+									"value": "4",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/productos/delete/",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"productos",
+								"delete",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Mercado Libre",
+			"item": [
+				{
+					"name": "Get Productos Mercado Libre",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/mercado-libre/",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"mercado-libre",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Reqres",
+			"item": [
+				{
+					"name": "Test Remote",
+					"item": [
+						{
+							"name": "Create",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "GUss",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "developer",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://reqres.in/api/users",
+									"protocol": "https",
+									"host": [
+										"reqres",
+										"in"
+									],
+									"path": [
+										"api",
+										"users"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Reqres API",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://reqres.in/api/users?page=1&per_page=12",
+									"protocol": "https",
+									"host": [
+										"reqres",
+										"in"
+									],
+									"path": [
+										"api",
+										"users"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "per_page",
+											"value": "12"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Get Users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/reqres/users/",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"reqres",
+								"users",
+								""
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reqres Create User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "first_name",
+									"value": "Iloqueen",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "last_name",
+									"value": "Obilinovik",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "Iloqueen@gmail.com",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "avatar",
+									"value": "base_url/123",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}reqres/users/create",
+							"host": [
+								"{{url}}reqres"
+							],
+							"path": [
+								"users",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reqres Update User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "first_name",
+									"value": "dsfgs",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "sdfgs",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "sssss",
+									"type": "text"
+								},
+								{
+									"key": "avatar",
+									"value": "sdfgsdfg",
+									"type": "text"
+								},
+								{
+									"key": "id",
+									"value": "19",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/reqres/users/update",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"reqres",
+								"users",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reqres Delete",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/reqres/users/delete",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"reqres",
+								"users",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Sync Users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/reqres/sync",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"reqres",
+								"sync"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
